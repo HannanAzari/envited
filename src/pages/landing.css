@@ -1,0 +1,112 @@
+.landing {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EDE5FF;
+    position: relative;
+}
+.banner img {
+    width: 440px;
+    height: 675px;
+    padding: 50px;
+}
+.heading {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.heading h1 {
+    font-size: 50px;
+    text-align: end;
+}
+.heading p {
+    font-size: 20px;
+    text-align: end;
+}
+.heading span {
+    background-color: #8456EC;
+    background-image: linear-gradient(to right, #8456EC, #E87BF8);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.btn {
+    margin-top: 50px;
+}
+.btn a {
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #F6F2FF;
+    background-image: linear-gradient(to right, #8456EC, #E87BF8);
+}
+.md {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .landing {
+        flex-direction: column;
+        position: relative;
+    }
+    .heading h1 {
+        font-size: 40px;
+    }
+    .heading p {
+        font-size: 15px;
+    }
+    .banner img {
+        width: 300px;
+        height: 500px;
+    
+    }
+    .heading {
+        justify-content: center;
+        align-items: center;
+    }
+    .heading { order: 1; }
+    .banner { order: 2; }
+
+    .btn {
+        position: absolute;
+        left: 375px;
+        top: 770px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .landing {
+        flex-direction: column;
+        position: relative;
+    }
+    .heading { order: 1; }
+    .banner { order: 2; }
+    .banner img {
+        width: 165px;
+        height: 290px;
+    
+    }
+    .heading h1 {
+        font-size: 25px;
+    }
+    .heading p {
+        font-size: 10px;
+    }
+
+    .btn {
+        position: absolute;
+        left: 100px;
+        top: 510px;
+        
+    }
+    .btn a {
+        font-size: 15px;
+    }
+
+}
